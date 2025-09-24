@@ -1,0 +1,38 @@
+import java.util.*;
+
+public class Areas {
+    public static double circle(double r) {
+        return r * r * Math.PI;
+    }
+
+    public static double rectangle(double length, double width) {
+        return length * width;
+    }
+
+    public static double triangle(double base, double height) {
+        return 0.5 * base * height;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        
+        System.out.print("Enter radius of circle: ");
+        double r = sc.nextDouble();
+        System.out.println("Area of circle: " + circle(r));
+
+        
+        System.out.print("Enter length of rectangle: ");
+        double l = sc.nextDouble();
+        System.out.print("Enter width of rectangle: ");
+        double w = sc.nextDouble();
+        System.out.println("Area of rectangle: " + rectangle(l, w));
+
+        
+        System.out.print("Enter base of triangle: ");
+        double b = sc.nextDouble();
+        System.out.print("Enter height of triangle: ");
+        double h = sc.nextDouble();
+        System.out.println("Area of triangle: " + triangle(b, h));
+    }
+}
