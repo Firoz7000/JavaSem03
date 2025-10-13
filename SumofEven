@@ -1,0 +1,18 @@
+import java.util.*;;
+public class SumEvenNo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the no :");
+        int n = sc.nextInt();
+        int i = 1;
+        int sumeven = 0;
+        while (i <= n) {
+            if (i % 2 == 0) {
+                sumeven += i;
+            }
+            i++;
+        }
+        System.out.println("The sum of even no. is :" + sumeven);
+
+    }
+}
